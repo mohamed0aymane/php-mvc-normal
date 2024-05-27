@@ -6,10 +6,10 @@
     <?php } ?> <br><br>
 
     <div>
-        <a href="index.php?module=<?= $module ?>&action=edit&id=<?= $element["id"] ?>">
+        <a  style="color: brown;" href="index.php?module=<?= $module ?>&action=edit&id=<?= $element["id"] ?>">
             modifier
         </a>|
-        <a href="index.php?module=<?= $module ?>&action=delete&id=<?= $element["id"] ?>">
+        <a  style="color: brown;" href="index.php?module=<?= $module ?>&action=delete&id=<?= $element["id"] ?>">
             supprimer
         </a>
     </div>
