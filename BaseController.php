@@ -77,3 +77,4 @@ function edit($module)
     ];
     render($view, $variables);
 }
+
