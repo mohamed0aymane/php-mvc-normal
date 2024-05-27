@@ -1,6 +1,8 @@
 <?php
 return[
-    "etudiant"=>"etudiants",
-    "filiere"=>"filieres",
-    "departement"=>"departements",
+    "etudiant"=>"Etudiants",
+    "filiere"=>"Filieres",
+    "departement"=>"Departements",
+    "module"=>"Modules",
+    "user"=>"User",
 ];

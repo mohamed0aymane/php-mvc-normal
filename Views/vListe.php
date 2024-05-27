@@ -1,5 +1,5 @@
 <h1> Les informations de la table : <?=$module?></h1>
-<hr><br><br>
+<hr style="background-color: brown; border-color:brown;"><br><br>
 <div>
     <?php
         if(count($liste)>0){
@@ -40,8 +40,8 @@
     else echo"<b>Aucun element dans cette table !</b>"; ?>
     </div>
 <div align="right">
-        <a href="index.php?module=<?=$module ?>&action=edit?>">
-                            AjouterNouveau<?=$module ?> 
+        <a href="index.php?module=<?=$module ?>&action=edit">
+                            Ajouter Nouveau <?=$module ?> 
                         </a>
 
 </div>

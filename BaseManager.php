@@ -32,8 +32,9 @@ function save($table, $element){
 	$values = array_values($element);
 	
 	if (empty($id)) {
+		
 		$champsInsert = join(", ",$champs);			
-		$valuesInsert = join(", ",array_fill_keys($champs,'?'));
+		$valuesInsert = join(", ", array_fill(0, count($champs), '?'));
 		$rq = "insert into $table ($champsInsert) values ($valuesInsert)";
 
 		
