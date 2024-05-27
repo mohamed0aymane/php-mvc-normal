@@ -1,4 +1,4 @@
-<h1 style="color: white;"> Les informations de la table : <?=$module?></h1>
+<h1 style="color: brown;"> Les informations de la table : <?=$module?></h1>
 <hr style="background-color: brown; border-color:brown;"><br><br>
 <div>
     <?php
