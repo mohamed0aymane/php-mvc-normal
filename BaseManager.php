@@ -51,3 +51,22 @@ function save($table, $element){
 	}
 		return $result;
 }
+
+function login($username, $password) {
+   
+
+    try {
+		$rq="SELECT * FROM user WHERE username = ?";
+        $result = getCn()->prepare($rq);
+        $result->execute([$username]);
+        $user = $result->fetch(PDO::FETCH_ASSOC);
+
+        if ($user) {
+            return $user;
+        } else {
+            return false;
+        }
+    } catch (PDOException $e) {
+        die("Erreur dans la base de donne: " . $e->getMessage());
+    }
+}

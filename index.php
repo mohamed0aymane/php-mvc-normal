@@ -1,4 +1,5 @@
 <?php
+require_once 'Views/vSession_check.php';
 require("BaseController.php");
 try{
     $module=isset($_GET["module"])? ucFirst($_GET["module"]) : "Index";
